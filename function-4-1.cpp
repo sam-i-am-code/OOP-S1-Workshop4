@@ -26,7 +26,7 @@ int secondSmallestSum(int *numbers, int length){
             for(int j=i;j<length;j++){
                 total += *(numbers+j-k);
             }        
-            if(total<smallest){
+            if(total<=smallest){
             //    if(smallest!=secSmallest){
                 secSmallest=smallest;
             //}    
