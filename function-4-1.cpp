@@ -25,11 +25,11 @@ int secondSmallestSum(int *numbers, int length){
             int total = 0;
             for(int j=i;j<length;j++){
                 total += *(numbers+j-k);
-            }   
-            if(i>0 && smallest!=secSmallest){
-                secSmallest=smallest;
-            }         
+            }        
             if(total<smallest){
+                if(smallest!=secSmallest){
+                secSmallest=smallest;
+            }    
                 smallest=total;
             }
             //std::cout<<smallest<<" "<<secSmallest<<std::endl<<std::endl;
