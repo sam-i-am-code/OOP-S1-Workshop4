@@ -27,9 +27,9 @@ int secondSmallestSum(int *numbers, int length){
                 total += *(numbers+j-k);
             }        
             if(total<smallest){
-                if(smallest!=secSmallest){
+            //    if(smallest!=secSmallest){
                 secSmallest=smallest;
-            }    
+            //}    
                 smallest=total;
             }
             //std::cout<<smallest<<" "<<secSmallest<<std::endl<<std::endl;
