@@ -14,6 +14,5 @@ void printNumbers(int *numbers,int length){
     for(int k = 0; k < 10; k++){
         std::cout<<k<<" "<<*(numbers+k)<<std::endl;
     }
-    delete [] numbers;
     return;
 }
